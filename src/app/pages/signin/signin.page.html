@@ -1,0 +1,78 @@
+<ion-header no-border>
+  <ion-toolbar mode="ios" color="gradient">
+    <ion-buttons slot="start">
+      <ion-button fill="clear" (click)="closeModal()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Sign In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding">
+  <ion-item color="gradient">
+    <ion-row class="ion-margin-top ion-margin-bottom">
+      <ion-col size="12" class="ion-text-center">
+        <img src="assets/imgs/domotics.svg" alt="smart-home" width="120px">
+      </ion-col>
+    </ion-row>
+  </ion-item>
+
+  <ion-grid class="ion-text-center">
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating" color="secondary">Email</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating" color="secondary">Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="10" offset="1" class="ion-margin-bottom">
+        <ion-button expand="block" color="primary">
+          <ion-label>Submit</ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row align-items-start>
+      <ion-col size="10" offset="1">
+        <ion-button expand="block" fill="outline" color="primary">
+          <ion-label class="ion-margin-end">Sign in with </ion-label>
+          <img src="assets/imgs/google.svg" alt="google-logo" width="25px">
+          <ion-label class="ion-margin-start">Google</ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col size="10" offset="1">
+        <ion-button expand="block" fill="outline" color="primary">
+          <ion-label class="ion-margin-end">Sign in with </ion-label>
+          <img src="assets/imgs/facebook.svg" alt="facebook-logo" width="25px">
+          <ion-label class="ion-margin-start">Facebook</ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <h6>
+            No account yet? <ion-text color="tertiary" (click)="signup()"><u>Sign up instead</u></ion-text>
+          </h6>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>
